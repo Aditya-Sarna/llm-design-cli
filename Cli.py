@@ -49,18 +49,27 @@ def select(model_name:str):
     print("model selected , you can prompt now using StableDiffusion_prompt<your-prompt>")
 
 
-
-
-
-
-
 @app.command()
 def help_commands ():
   print("select -- select <model name > is used to activate an AI model")
   print("modelname_prompt --  prompt to the selected model")
   print("help_commands -- lists all help commands" )
   print ("models -- lists all existing models")
-  
+
+
+@app.command()
+def models():
+  print("Chatgpt")
+  print("ClaudeAI")
+  print("Gemini")
+  print("NanoBanana")
+  print("PicassoAI")
+  print ("Deepseek")
+  print("Copilot")
+  print("MistralAI")
+  print("MidJourney")
+  print("DALLE3")
+  print("StableDiffusion")
 
 
 if __name__=="__main__":
