@@ -33,6 +33,8 @@ def select(model_name:str):
     print("model selected , you can prompt now using NanoBanana_prompt <your-prompt>")
   elif model_name=="PicassoAI" :
     print("model selected, you can now prompt now using PicassoAI_prompt <your-prompt>")
+  elif model_name=="Deepseek":
+    print("model selected , you can prompt now using Deepseek_prompt <your-prompt>")
   elif 
 if __name__=="__main__":
   app()
