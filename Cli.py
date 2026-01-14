@@ -3,9 +3,11 @@ app=typer.Typer()
 @app.command()
 def hello():
   print("welcome to Cz , press model to get a list of available models  ")
-  print("enter model (name of model) to activate that model")
+  print("enter select  (name of model) to activate that model")
+  
 @app.command()
 def model():
+  //research & add more models 
   print("Chatgpt")
   print("ClaudeAI")
   print("Gemini")
@@ -13,6 +15,7 @@ def model():
   print("Picasso ai")
   print ("deepseek")
   print("copilot")
+  print("mistral ai")
   
   
  
