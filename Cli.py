@@ -32,10 +32,22 @@ def select(model_name:str):
   elif model_name=="NanoBanana " :
     print("model selected , you can prompt now using NanoBanana_prompt <your-prompt>")
   elif model_name=="PicassoAI" :
-    print("model selected, you can now prompt now using PicassoAI_prompt <your-prompt>")
+    print("model selected, you can now prompt nusing PicassoAI_prompt <your-prompt>")
   elif model_name=="Deepseek":
     print("model selected , you can prompt now using Deepseek_prompt <your-prompt>")
-  elif 
+  elif model_name=="Copilot":
+    print("model selected , you can prompt now using Copilot_prompt <your-prompt>")
+  elif model_name=="MistralAI":
+    print("model selected , you can prompt now using MistralAI_prompt <your-prompt>")
+  elif model_name=="MidJourney":
+    print("model selected, you can prompt now using MidJourney_prompt <your-prompt>")
+  elif model_name=="DALLE3":
+    print("model selected, you can prompt now using DALLE3_prompt <your-prompt>")
+  elif model_name=="StableDiffusion":
+    print("model selected , you can prompt now using StableDiffusion_prompt<your-prompt>")
+
+
+
 if __name__=="__main__":
   app()
   
