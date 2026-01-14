@@ -13,12 +13,17 @@ def model():
   print("Gemini")
   print("Nano Banana")
   print("Picasso ai")
-  print ("deepseek")
-  print("copilot")
+  print ("Deepseek")
+  print("Copilot")
   print("mistral ai")
+  print("MidJourney")
+  print("DALLE3")
+  print("Stable Diffusion")
   
   
- 
+ @app.command():
+def select(model_name:str):
+  
 if __name__=="__main__":
   app()
   
