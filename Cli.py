@@ -4,6 +4,8 @@ app=typer.Typer()
 def hello():
   print("welcome to Cz , press model to get a list of available models  ")
   print("enter select  (name of model) to activate that model")
+  print("enter help_commands to display list of commands ")
+
   
 @app.command()
 def model():
@@ -21,7 +23,7 @@ def model():
   print("StableDiffusion")
   
   
- @app.command():
+ @app.command()
 def select(model_name:str):
   if model_name=="Chatgpt" :
     print("model selected , you can prompt now using Chatgt_prompt <your-prompt>")
@@ -46,6 +48,12 @@ def select(model_name:str):
   elif model_name=="StableDiffusion":
     print("model selected , you can prompt now using StableDiffusion_prompt<your-prompt>")
 
+
+@app.command()
+def help_commands ():
+  print("select -- select <model name > is used to activate an AI model)
+  print("modelname_prompt -- used to prompt to the selected model")
+  
 
 
 if __name__=="__main__":
