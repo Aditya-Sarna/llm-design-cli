@@ -41,6 +41,7 @@ DALLE3_URL=""
 STABBLEDIFFUSION_URL=""
 for api_key in url.values():
     headers = {"Authorization": f"Bearer {api_key}"}
+    
 
 
 
