@@ -41,7 +41,13 @@ DALLE3_URL=""
 STABBLEDIFFUSION_URL=""
 for api_key in url.values():
     headers = {"Authorization": f"Bearer {api_key}"}
-    
+    response=requests.get(api_key,header=headers)
+    if response.status_code==401:
+        print("You are unauthorized,kindly recheck the api key")
+    elif response.status_code==403:
+        print("error:forbidden, kindly recheck permissions for this")
+    elif response.status_code==429:
+        print("error: rate limit reached")
 
 
 
@@ -63,6 +69,7 @@ url  = {
 for key_name, key_value in keys.items():
     if not key_value:
         raise ValueError(f"{key_name} is missing. Please check again.")
+    
 
 @app.command()
 def hello():
