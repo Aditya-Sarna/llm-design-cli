@@ -5,6 +5,23 @@ app=typer.Typer()
 OPENAI_KEY=getenv("OPENAI_API_KEY")
 CLAUDEAI_KEY=getenv("CLAUDEAI_API_KEY")
 NANOBANANA_KEY=getenv("NANOBANANA_API_KEY")
+PICASSOAI_KEY=getenv("PICASSOAI_API_KEY")
+DEEPSEEK_KEY=getenv("DEEPSEEK_API_KEY")
+
+
+
+
+
+
+
+
+
+
+
+
+if not OPENAI_KEY:
+    raise ValueError("API key for OPENAI is missing .please check again")
+
 
                     
 @app.command()
