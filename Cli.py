@@ -1,5 +1,7 @@
 import typer
+import os 
 app=typer.Typer()
+OPENAI_KEY=getenv("OPENAI_API_KEY")
 @app.command()
 def hello():
   print("welcome to Cz , press model to get a list of available models  ")
