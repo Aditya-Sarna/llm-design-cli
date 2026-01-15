@@ -1,7 +1,12 @@
 import typer
 import os 
 app=typer.Typer()
+# fetch api keys for all post verification of availability and token limit 
 OPENAI_KEY=getenv("OPENAI_API_KEY")
+CLAUDEAI_KEY=getenv("CLAUDEAI_API_KEY")
+NANOBANANA_KEY=getenv("NANOBANANA_API_KEY")
+
+                    
 @app.command()
 def hello():
   print("welcome to Cz , press model to get a list of available models  ")
