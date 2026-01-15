@@ -13,10 +13,10 @@ MIDJOURNEY_KEY=getenv("MIDJOURNEY_API_KEY")
 DALLE3_KEY=getenv("DALLE3_API_KEY")
 STABLEDIFFUSION_KEY=getenv("STABLEDIFFUSION_API_KEY")
 #error handling to check 
-Keys_variable =["OPENAI_KEY", "CLAUDE_KEY","NANABANANA_KEY","PICASSOAI_KEY","DEEPSEEK_KEY","COPILOT_KEY","MISTRALAI_KEY"
+Keys_variable =["OPENAI_KEY", "CLAUDE_KEY","NANABANANA_KEY","PICASSOAI_KEY","DEEPSEEK_KEY","COPILOT_KEY","MISTRALAI_KEY","MIDJOURNEY_KEY","DALLE3_KEY","STABLEDIFFUSION_KEY"]
 for api_variable in Keys_variable :
 if not api_variable:
-    raise ValueError(f" {api is missing .please check again")
+    raise ValueError(f" {api_variable} is missing .please check again")
 
 
                     
