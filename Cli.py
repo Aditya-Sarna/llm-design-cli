@@ -29,6 +29,36 @@ keys = {
     "STABLEDIFFUSION_KEY": STABLEDIFFUSION_KEY,
 }
 
+OPENAI_URL=""
+CLAUDEAI_URL=""
+PICASSOAI_URL=""
+NANOBANANA_URL=""
+DEEPSEEK_URL=""
+COPILOT_URL=""
+MISTRALAI_URL=""
+MIDJOURNEY_URL=""
+DALLE3_URL=""
+STABBLEDIFFUSION_URL=""
+for api_key in url.values():
+    headers = {"Authorization": f"Bearer {api_key}"}
+
+
+
+
+url  = {
+    "OPENAI_URL": OPENAI_KEY,
+    "CLAUDEAI_URL": CLAUDEAI_KEY,
+    "NANOBANANA_URL": NANOBANANA_KEY,
+    "PICASSOAI_URL": PICASSOAI_KEY,
+    "DEEPSEEK_URL": DEEPSEEK_KEY,
+    "COPILOT_URL": COPILOT_KEY,
+    "MISTRALAI_URL": MISTRALAI_KEY,
+    "MIDJOURNEY_URL": MIDJOURNEY_KEY,
+    "DALLE3_URL": DALLE3_KEY,
+    "STABLEDIFFUSION_URL": STABLEDIFFUSION_KEY,
+}
+
+
 for key_name, key_value in keys.items():
     if not key_value:
         raise ValueError(f"{key_name} is missing. Please check again.")
