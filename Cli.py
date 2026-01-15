@@ -12,7 +12,7 @@ DEEPSEEK_KEY = os.getenv("DEEPSEEK_API_KEY")
 COPILOT_KEY = os.getenv("COPILOT_API_KEY")
 MISTRALAI_KEY = os.getenv("MISTRALAI_API_KEY")
 MIDJOURNEY_KEY = os.getenv("MIDJOURNEY_API_KEY")
-DALLE3_KEY = os.getenv("DALLE3_API_KEY")
+DALLE_KEY = os.getenv("DALLE_API_KEY")
 STABLEDIFFUSION_KEY = os.getenv("STABLEDIFFUSION_API_KEY")
 
 # Error handling to check if keys are missing
@@ -25,7 +25,7 @@ keys = {
     "COPILOT_KEY": COPILOT_KEY,
     "MISTRALAI_KEY": MISTRALAI_KEY,
     "MIDJOURNEY_KEY": MIDJOURNEY_KEY,
-    "DALLE3_KEY": DALLE3_KEY,
+    "DALLE_KEY": DALLE_KEY,
     "STABLEDIFFUSION_KEY": STABLEDIFFUSION_KEY,
 }
 
@@ -37,7 +37,7 @@ DEEPSEEK_URL=""
 COPILOT_URL=""
 MISTRALAI_URL=""
 MIDJOURNEY_URL=""
-DALLE3_URL=""
+DALLE_URL=""
 STABBLEDIFFUSION_URL=""
 for api_key in url.values():
     headers = {"Authorization": f"Bearer {api_key}"}
@@ -61,7 +61,7 @@ url  = {
     "COPILOT_URL": COPILOT_KEY,
     "MISTRALAI_URL": MISTRALAI_KEY,
     "MIDJOURNEY_URL": MIDJOURNEY_KEY,
-    "DALLE3_URL": DALLE3_KEY,
+    "DALLE_URL": DALLE_KEY,
     "STABLEDIFFUSION_URL": STABLEDIFFUSION_KEY,
 }
 
@@ -82,7 +82,7 @@ def model():
     # Research & add more models
     models = [
         "Chatgpt", "ClaudeAI", "Gemini", "NanoBanana", "PicassoAI",
-        "Deepseek", "Copilot", "MistralAI", "MidJourney", "DALLE3", "StableDiffusion"
+        "Deepseek", "Copilot", "MistralAI", "MidJourney", "DALLE", "StableDiffusion"
     ]
     for m in models:
         typer.echo(m)
@@ -107,8 +107,8 @@ def select(model_name: str):
         typer.echo("Model selected. Use MistralAI_prompt <your-prompt>")
     elif model_name == "MidJourney":
         typer.echo("Model selected. Use MidJourney_prompt <your-prompt>")
-    elif model_name == "DALLE3":
-        typer.echo("Model selected. Use DALLE3_prompt <your-prompt>")
+    elif model_name == "DALLE":
+        typer.echo("Model selected. Use DALLE_prompt <your-prompt>")
     elif model_name == "StableDiffusion":
         typer.echo("Model selected. Use StableDiffusion_prompt <your-prompt>")
 
@@ -123,7 +123,7 @@ def help_commands():
 def models():
     model_list = [
         "Chatgpt", "ClaudeAI", "Gemini", "NanoBanana", "PicassoAI",
-        "Deepseek", "Copilot", "MistralAI", "MidJourney", "DALLE3", "StableDiffusion"
+        "Deepseek", "Copilot", "MistralAI", "MidJourney", "DALLE", "StableDiffusion"
     ]
     for m in model_list:
         typer.echo(m)
