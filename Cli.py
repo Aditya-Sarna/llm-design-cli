@@ -127,6 +127,7 @@ def models():
     ]
     for m in model_list:
         typer.echo(m)
+@app.command()
 
 if __name__ == "__main__":
     app()
