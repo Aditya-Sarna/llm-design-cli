@@ -1,4 +1,4 @@
-import type
+import typer
 import os
 import requests 
 app = typer.Typer()
